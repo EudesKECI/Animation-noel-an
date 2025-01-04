@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  /* background: linear-gradient(to bottom, #038d8a, #dc4225); */
+  background: linear-gradient(to bottom, #004d00, #8b0000);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  z-index: 1;
+}
+
+.hearth {
+  position: absolute;
+  opacity: 0;
+  top: 325px;
+  left: 755px;
+  text-shadow: 0px 0px 20px rgb(236, 8, 164);
+  animation: hearth 0.5s forwards 6s;
+}
+
+@keyframes hearth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.star {
+  position: absolute;
+  top: -500px;
+  left: 700px;
+  font-size: 10rem;
+  color: yellow;
+  text-shadow: 0px 0px 15px gold;
+  transition: text-shadow 0.5s;
+  animation: star 3s forwards 7s;
+}
+
+@keyframes star {
+  0% {
+    top: -500px;
+    left: 700px;
+  }
+
+  50% {
+    top: 10px;
+  }
+
+  75% {
+    top: -7px;
+  }
+
+  100% {
+    top: 0px
+  }
+}
+
+
+.star_light {
+  text-shadow: 0px 0px 75px yellow, 0px 0px 30px gold;
+  transition: text-shadow 0.5s;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  text-shadow: 0px 0px 20px greenyellow, 0px 0px 30px #ff0000, 0px 0px 40px black;
+}
+
+#sapin {
+  position: absolute;
+  bottom: -100px;
+  animation: sapin 3s forwards 1s;
+}
+
+@keyframes sapin {
+  0% {
+    top: 1000px;
+  }
+
+  100% {
+    top: 400px;
+    left: 710px;
+  }
+
+}
+
+#noel {
+  position: absolute;
+  right: -200px;
+  top: 250px;
+  animation: noel 3s forwards 4s;
+}
+
+@keyframes noel {
+  0% {
+    right: -100px;
+  }
+
+  50% {
+
+    right: 600px;
+  }
+
+  100% {
+    right: 550px;
+  }
+
+}
+
+#joyeux {
+  position: absolute;
+  top: 250px;
+  left: -300px;
+  animation: joyeux 3s forwards 4s;
+}
+
+@keyframes joyeux {
+  0% {
+    left: -300px
+  }
+
+  50% {
+    left: 490px;
+  }
+
+  100% {
+    left: 450px;
+  }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
